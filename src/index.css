@@ -1,0 +1,147 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/manrope/manrope-v15-latin-regular.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/src/assets/fonts/manrope/manrope-v15-latin-500.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/src/assets/fonts/manrope/manrope-v15-latin-600.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/src/assets/fonts/manrope/manrope-v15-latin-700.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/src/assets/fonts/manrope/manrope-v15-latin-800.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/inter/inter-v13-latin-regular.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/src/assets/fonts/inter/Inter-Medium.ttf) format("woff2");
+  }
+  @font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/src/assets/fonts/inter/Inter-SemiBold.ttf) format("woff2");
+  }
+  @font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/src/assets/fonts/inter/Inter-Bold.ttf) format("woff2");
+  }
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/dmsans/dm-sans-v15-latin-regular.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/src/assets/fonts/dmsans/dm-sans-v15-latin-500.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/src/assets/fonts/dmsans/dm-sans-v15-latin-600.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "lexend";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/lexend/lexend-deca-v21-latin-regular.woff2)
+      format("woff2");
+  }
+
+  .font-outline-2 {
+    text-shadow: -1px 0 #ffffff69, 0 1px #ffffff69, 1px 0 #ffffff69,
+      0 -1px #ffffff69;
+    line-height: 100px !important;
+    color: #5324cf;
+    font-weight: 900;
+  }
+
+  .slider .slick-next {
+    display: none !important;
+  }
+  .slider .slick-prev {
+    display: none !important;
+  }
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 10px !important;
+  line-height: 1;
+  position: absolute;
+  top: 100% !important;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 17px;
+  height: 16px;
+  content: "•";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  color: black;
+  border: 1px solid black;
+  border-radius: 100%;
+  margin-top: 10px;
+}
